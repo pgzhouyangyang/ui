@@ -1,0 +1,4 @@
+{
+    "ellipsis": "./packages/ellipsis/index.js",
+    "timer": "./packages/timer/index.js"
+}

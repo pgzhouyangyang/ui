@@ -1,0 +1,12 @@
+.tz-ellipsis {
+    overflow: hidden;
+}
+.tz-ellipsis:not(.tz-ellipsis--line-clamp) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tz-ellipsis.tz-ellipsis--line-clamp {
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+}
