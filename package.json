@@ -1,7 +1,7 @@
 {
   "name": "tzcx-ui",
   "author": "zhouyangyang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "公共组件库",
   "main": "lib/tz-ui.common.js",
   "files": [
@@ -18,7 +18,7 @@
     "build:theme": "node build/bin/gen-cssfile && gulp build --gulpfile packages/theme-chalk/gulpfile.js && cp-cli packages/theme-chalk/lib lib/theme-chalk",
     "build:utils": "cross-env BABEL_ENV=utils babel src --out-dir lib --ignore src/index.js",
     "clean": "rimraf lib && rimraf packages/*/lib && rimraf test/**/coverage",
-    "publish": "sh build/publish.sh"
+    "pub": "sh build/publish.sh"
   },
   "dependencies": {
     "moment": "^2.29.1",
