@@ -30,6 +30,25 @@
 ```
 :::
 
+### 最大高度
+使用 `max-height` 设置显示区的最大高度。
+::: demo
+```html
+<template>
+  <tz-ellipsis expand-trigger="click" max-height="40px" :tooltip="false">
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+      <br/>
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+      <br/>
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+      <br/>
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+  </tz-ellipsis>
+</template>
+```
+:::
+
+
 ### 展开完整内容
 使用 `expand-trigger="click"` 搭配 `line-clamp` 参数可以实现点击缩略文本展开完整文本的功能
 ::: demo

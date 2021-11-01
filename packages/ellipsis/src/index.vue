@@ -7,10 +7,14 @@
          <div 
             class="tz-ellipsis" 
             :class="[
-                lineClamp ? 'tz-ellipsis--line-clamp' : ''
+                lineClamp ? 'tz-ellipsis--line-clamp' : '',
+                maxHeight ? 'tz-ellipsis__max_height' : '',
+                expanded ? 'tz-ellipsis__open' : 'tz-ellipsis__fold'
+                
             ]" 
             :style="{
-                '-webkit-line-clamp': expanded ? '' : lineClamp 
+                '-webkit-line-clamp': expanded ? '' : lineClamp,
+                'max-height': expanded ? '' : maxHeight
 
             }"
             @click="expandTrigger == 'click' ? expanded = !expanded : ''"
@@ -18,10 +22,7 @@
             <slot></slot>
         </div>
     </el-tooltip>
-   
-
 </template>
-
 <script>
 export default {
     name: "TzEllipsis",
@@ -34,7 +35,8 @@ export default {
         tooltip: {
             type: [Boolean, Object],
             default: true
-        }
+        },
+        maxHeight: String
     },
     data() {
         return {

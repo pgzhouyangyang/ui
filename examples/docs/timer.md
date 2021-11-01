@@ -11,7 +11,7 @@
 
 
 ### 自定义格式
-通过 format 属性设置计时器文本的内容。
+通过 `format` 属性设置计时器文本的内容格式。
 :::demo
 ```html
 <template>
@@ -40,7 +40,7 @@
 
 
 ### 手动控制
-通过 ref 获取组件实例后，可调用start， pause，clear 方法。
+通过 `ref` 获取组件实例后，可调用`start`， `pause`，`clear` 方法。
 :::demo `auto-start`设置为fasle， 可使用 `start-time` 指定计时开始时间。
 ```html
 <template>

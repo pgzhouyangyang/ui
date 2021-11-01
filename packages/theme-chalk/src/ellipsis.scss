@@ -10,3 +10,18 @@
     display: -webkit-inline-box;
     -webkit-box-orient: vertical;
 }
+
+.tz-ellipsis__max_height.tz-ellipsis__fold {
+    position: relative;
+    &::after {
+        background: linear-gradient(rgba(255, 255, 255, 0.2) 25px, #fff);
+        content: " ";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 40px;
+        transition-duration: 0.1s;
+        transition-property: opacity;
+    }
+}

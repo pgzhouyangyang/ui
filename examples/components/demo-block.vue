@@ -182,7 +182,7 @@
 
 <script type="text/babel">
   import { stripScript, stripStyle, stripTemplate } from '../util';
-  const  version  = "1.0.0"
+  const  version  = "1.0.1"
 
   export default {
     data() {
