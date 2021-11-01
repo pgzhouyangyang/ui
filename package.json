@@ -1,7 +1,7 @@
 {
   "name": "tzcx-ui",
   "author": "zhouyangyang",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "公共组件库",
   "main": "lib/tz-ui.common.js",
   "files": [
