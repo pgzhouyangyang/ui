@@ -9,7 +9,7 @@ export class CreatTimer {
         this.time = 0
     }
     start(callback) {
-        if(this.counting) {
+        if (this.counting) {
             return
         }
         this.counting = true;
@@ -17,19 +17,19 @@ export class CreatTimer {
         this.microTick(callback);
     }
     pause() {
-        if(!this.counting) {
+        if (!this.counting) {
             return
         }
         this.counting = false;
         window.cancelAnimationFrame(this.timerId);
     }
     clear() {
-        if(!this.counting) {
+        if (!this.counting) {
             return
         }
         this.counting = false;
         window.cancelAnimationFrame(this.timerId);
-        
+
     }
     microTick(callback) {
         const _this = this;
@@ -65,7 +65,7 @@ export function parseFormat(format, timeData) {
         minutes = timeData.minutes,
         seconds = timeData.seconds,
         milliseconds = timeData.milliseconds;
-       
+
     if (format.indexOf('DD') === -1) {
         hours += days * 24;
     } else {
@@ -104,7 +104,7 @@ export function parseFormat(format, timeData) {
     return format;
 }
 
-function padZero(num, targetLength) {
+export function padZero(num, targetLength) {
     if (targetLength === void 0) {
         targetLength = 2;
     }
@@ -116,4 +116,18 @@ function padZero(num, targetLength) {
     }
 
     return str;
+}
+
+export function parseStyleSize(size) {
+    if (typeof size === 'number') {
+        return size;
+    }
+    if (typeof size === 'string') {
+        if (/^\d+(?:px)?$/.test(size)) {
+            return parseInt(size, 10);
+        } else {
+            return size;
+        }
+    }
+    return null;
 }

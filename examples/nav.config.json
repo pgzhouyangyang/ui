@@ -28,11 +28,15 @@
         "list": [
           {
             "path": "/ellipsis",
-            "title": "文本省略ellipsis"
+            "title": "Ellipsis 文本省略"
           },
           {
             "path": "/timer",
-            "title": "计时器timer"
+            "title": "Timer 计时器timer"
+          },
+          {
+            "path": "/customTable",
+            "title": "CustomTable 自定义表格"
           }
         ]
       }

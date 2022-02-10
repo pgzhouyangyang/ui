@@ -14,7 +14,7 @@
             ]" 
             :style="{
                 '-webkit-line-clamp': expanded ? '' : lineClamp,
-                'max-height': expanded ? '' : maxHeight
+                'max-height': expanded ? '' : parseHeight(maxHeight)
 
             }"
             @click="expandTrigger == 'click' ? expanded = !expanded : ''"
@@ -24,6 +24,7 @@
     </el-tooltip>
 </template>
 <script>
+import {parseStyleSize} from "../../../src/utils/util"
 export default {
     name: "TzEllipsis",
     props: {
@@ -44,6 +45,11 @@ export default {
             defaultTooltip: {
                 placement: "top"
             }
+        }
+    },
+    methods: {
+        parseHeight(height) {
+            return parseStyleSize(height) + "px"
         }
     }
 }

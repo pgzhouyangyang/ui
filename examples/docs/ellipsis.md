@@ -30,24 +30,6 @@
 ```
 :::
 
-### 最大高度
-使用 `max-height` 设置显示区的最大高度。
-::: demo
-```html
-<template>
-  <tz-ellipsis expand-trigger="click" max-height="40px" :tooltip="false">
-      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
-      <br/>
-      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
-      <br/>
-      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
-      <br/>
-      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
-  </tz-ellipsis>
-</template>
-```
-:::
-
 
 ### 展开完整内容
 使用 `expand-trigger="click"` 搭配 `line-clamp` 参数可以实现点击缩略文本展开完整文本的功能
@@ -64,7 +46,23 @@
 ```
 :::
 
-
+### 最大高度
+使用 `max-height` 设置显示区的最大高度。
+::: demo
+```html
+<template>
+  <tz-ellipsis expand-trigger="click" max-height="40" :tooltip="false">
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+      <br/>
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+      <br/>
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+      <br/>
+      基于 -webkit-line-clamp 的多行省略;基于 -webkit-line-clamp 的多行省略;
+  </tz-ellipsis>
+</template>
+```
+:::
 
 
 
@@ -100,6 +98,7 @@
 |---|---|---|---|---|
 |expand-trigger|展开的触发方式|String|-|click|
 |line-clamp|最大行数|Number，String|-|-|
+|max-height|最大高度，合法的值为数字或者单位为 px 的高度。|Number，String|-|true|
 |tooltip|tooltip 的属性（参考<a href="https://element.eleme.cn/#/zh-CN/component/tooltip" target="_blank">element-ui tooltip</a>）|Boolean，Object&lt;TooltipProps&gt;|-|-|
 
 

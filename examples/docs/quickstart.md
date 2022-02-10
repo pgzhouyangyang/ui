@@ -38,7 +38,7 @@ npm install babel-plugin-component -D
 }
 ```
 
-接下来，如果你只希望引入部分组件，比如 Button 和 Select，那么需要在 main.js 中写入以下内容：
+接下来，如果你只希望引入部分组件，比如 Ellipsis 和 Timer, 那么需要在 main.js 中写入以下内容：
 ```
 import Vue from 'vue';
 import { Ellipsis, Timer } from 'tzcx-ui';

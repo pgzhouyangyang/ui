@@ -3,11 +3,11 @@
 ### npm 安装
 推荐使用 npm 的方式安装，它能更好地和 webpack 打包工具配合使用。
 ```
-npm install git+https://github.com/pgzhouyangyang/lib.git -S
+npm install tzcx-ui -S
 ```
 
 ### yarn 安装
 
 ```
-yarn add git+https://github.com/pgzhouyangyang/lib.git -S
+yarn add tzcx-ui -S
 ```
